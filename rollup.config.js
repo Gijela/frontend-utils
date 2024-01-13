@@ -10,19 +10,19 @@ module.exports = [
       {
         dir: 'lib',
         format: 'cjs',
-        entryFileNames: 'cjs/[name].js',
+        entryFileNames: '[name].cjs.js',
         sourcemap: false, // 是否输出sourcemap
       },
       {
         dir: 'lib',
         format: 'esm',
-        entryFileNames: 'esm/[name].js',
+        entryFileNames: '[name].esm.js',
         sourcemap: false, // 是否输出sourcemap
       },
       {
         dir: 'lib',
         format: 'umd',
-        entryFileNames: 'umd/[name].js',
+        entryFileNames: '[name].umd.js',
         name: 'frontend_utils', // umd模块名称，相当于一个命名空间，会自动挂载到window下面
         sourcemap: false,
         plugins: [terser()],

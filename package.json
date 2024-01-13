@@ -1,6 +1,6 @@
 {
-  "name": "frontend-utils",
-  "version": "1.0.0",
+  "name": "@frontendgijela/frontend-utils",
+  "version": "1.0.1",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "jsnext:main": "lib/index.esm.js",
@@ -12,9 +12,9 @@
   "description": "",
   "scripts": {
     "build": "rollup -c",
+    "publish": "npm publish --access=public",
     "test": "jest",
-    "coveralls": "jest --coverage",
-    "ttt": "tsc src/index.ts"
+    "coveralls": "jest --coverage"
   },
   "keywords": [],
   "author": "",
